@@ -1,0 +1,17 @@
+<h1>Welcome to Zambezi<h1>
+  <h3>It's way better than the Amazon</h3>
+  <h3>Not to be confused with Zamboni</h3>
+
+  <table>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <!-- <td><%= image_tag(product.picture) %></td> -->
+        <td><%= product.picture %></td>
+        <td><%= product.description %></td>
+        <td>$<%= product.formatted_price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
