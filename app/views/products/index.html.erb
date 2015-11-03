@@ -4,32 +4,33 @@
   <nav class="nav-wrap">
     <ul class="nav split">
       <li><a href="/">Home</a></li>
-      <li><a href="#/products">Shop |</a></li>
-      <li><a href="#portfolio">Shopping Cart |</a></li>
-      <li><a href="#icons">Contact</a></li>
+      <li><a href="/products">Shop |</a></li>
+      <li><a href="/about/index">About Us |</a></li>
+      <li><a href="/contact/index">Contact</a></li>
     </ul>
   </nav>
 
 
-
+<div class="list-page">
 <h1>Listing Fruits</h1>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th>Picture</th>
+      <!-- <th>Picture</th> -->
       <th>Description</th>
       <th>Price</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
+
   <tbody>
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= image_tag(product.picture) %></td>
+        <!-- <td><%= product.picture %></td> -->
         <!-- <td><%= product.picture %></td> -->
         <td><%= product.description %></td>
         <td>$<%= product.formatted_price %></td>
@@ -44,3 +45,4 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+</div>

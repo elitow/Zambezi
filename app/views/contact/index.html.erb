@@ -1,0 +1,27 @@
+<!--Navigation Bar-->
+  <nav class="nav-wrap">
+    <ul class="nav split">
+      <li><a href="/">Home</a></li>
+      <li><a href="/products">Shop |</a></li>
+      <li><a href="/about/index">About Us |</a></li>
+      <li><a href="/contact/index">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <h1>Contact Us</h1>
+<%= form_for :article do |f| %>
+ <p>
+   <strong><%= f.label :Name %><br></strong>
+   <%= f.text_field :name %>
+ </p>
+
+ <p>
+   <strong><%= f.label :Message %><br></strong>
+   <%= f.text_area :text %>
+ </p>
+
+ <p>
+   <input type="button" value="Submit Message">
+ </p>
+<% end %>

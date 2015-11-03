@@ -2,6 +2,9 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+
+
 .product-container {
   /*text-align: center;
   padding: 10px 20px;
@@ -24,3 +27,7 @@
 .product {
   flex: 1 1 calc(33.33% - 20px);
 }
+
+a:visited {
+    color: #100D0D;
+  }

@@ -5,20 +5,13 @@
   <nav class="nav-wrap">
     <ul class="nav split">
       <li><a href="/">Home</a></li>
-      <li><a href="#about">Shop |</a></li>
-      <li><a href="#portfolio">Shopping Cart |</a></li>
-      <li><a href="#icons">Contact</a></li>
+      <li><a href="/products">Shop |</a></li>
+      <li><a href="/about/index">About Us |</a></li>
+      <li><a href="/contact/index">Contact</a></li>
     </ul>
   </nav>
 
 
-<!--Search Bar-->
-  <div class="box">
-    <div class="container-1">
-        <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="Search..." />
-    </div>
-  </div>
 
 
 
@@ -31,18 +24,18 @@
 </div>
 
 
-  <div class="product-container">
-  <table>
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= image_tag(product.picture) %></td>
-        <!-- <td><%= product.picture %></td> -->
-        <td><%= product.description %></td>
-        <td>$<%= product.formatted_price %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div>
+    <ul class="product-container">
+      <% @products.each do |product| %>
+      <li class="products">
+        <h3><%= product.name %></h3>
+        <div class="product-image"><%= image_tag(product.picture) %></div>
+        <div class="product-description">
+        <p><%= product.description %> </p>
+        <p>$<%= product.formatted_price %></p>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+
 </div>
