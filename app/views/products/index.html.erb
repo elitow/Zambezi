@@ -1,3 +1,7 @@
+<!-- <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'> -->
+<link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+
+
 <p id="notice"><%= notice %></p>
 
 <!--Navigation Bar-->
@@ -13,11 +17,20 @@
 
 <div class="list-page">
 <h1>Listing Fruits</h1>
+<br>
+<br>
+<br>
 
+<div id="link">
+<%= link_to 'Create New Menu Item', new_product_path %>
+</div>
+<br>
+<br>
+<br>
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Name</th>  
       <!-- <th>Picture</th> -->
       <th>Description</th>
       <th>Price</th>
@@ -44,5 +57,5 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+
 </div>

@@ -1,3 +1,7 @@
+<!-- <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'> -->
+<link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+
+
 <!--Navigation Bar-->
   <nav class="nav-wrap">
     <ul class="nav split">
@@ -8,12 +12,31 @@
     </ul>
   </nav>
 
+  <div class="contact">
+    <h1>Contact Us</h1>
+  </div>
 
-  <h1>Contact Us</h1>
+
+  <div class="contact-info">
+    <!-- <h3>Contact Us</h3> -->
+    <p>Zambezi Fruit Stand <br>
+       5 Zambezi Way <br>
+       Zambezi, Africa 55555<br>
+       1-888-Zambezi
+    </p>
+  </div>
+
+
+<div class="contact-form"
 <%= form_for :article do |f| %>
  <p>
    <strong><%= f.label :Name %><br></strong>
    <%= f.text_field :name %>
+ </p>
+
+ <p>
+  <strong><%= f.label :Email %><br></strong>
+  <%= f.text_field :Email %>
  </p>
 
  <p>
@@ -25,3 +48,8 @@
    <input type="button" value="Submit Message">
  </p>
 <% end %>
+</div>
+
+<div class="contact-img">
+  <%= image_tag("zambezi.png") %>
+</div>
