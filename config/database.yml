@@ -32,4 +32,3 @@ test:
 production:
   database: zambezi_production
   <<: *default
-  password: <%= ENV['ZAMBEZI_DATABASE_PASSWORD'] %>
