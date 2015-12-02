@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: Zambezi_production
-  username: Zambezi
+  # username: Zambezi
   password: <%= ENV['ZAMBEZI_DATABASE_PASSWORD'] %>
