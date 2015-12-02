@@ -1,1 +1,1 @@
-worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
+web: rails server -p $PORT
