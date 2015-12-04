@@ -1,4 +1,4 @@
 == README
 
 Project Zambezi is a web app which allows a user to create picture menus with descriptions and prices of the dishes. This was created immediately after learning Rails. 
-Play around with (Project Zambezi)[zambezi-trio.herokuapp.com]!
+Play around with Project Zambezi[zambezi-trio.herokuapp.com]!
